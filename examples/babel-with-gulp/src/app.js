@@ -1,15 +1,23 @@
+'use strict';
 
-class Animal {
-  constructor( type ){
-    this.type = type;
-  }
+/**
+ * 简单封装了一个类
+ */
+ class Greeting {
 
-  say( word ){
-    let word = ''
-    alert('${this.type} say ${word} to you!');
-  }
-}
+   constructor(name) {
+     this.name = name || 'Guest';
+   }
 
-let bull = new Animal('bull');
+   hello() {
 
-bull.say('miemie....');
+     let str = 'hello';
+
+     alert(`${this.name} say ${str} to you`);
+   }
+
+ }
+
+let Guest = new Greeting();
+
+Guest.hello();

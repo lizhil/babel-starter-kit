@@ -11,9 +11,8 @@ let reload = browserSync.reload;
 // babel编译源文件
 gulp.task('babel', () => {
   return gulp.src('src/*.js')
-    .pipe(plumber())
     .pipe(babel())
-    .pipe(notify("<%= file.relative %>文件出现错误：<%= file.message %>"))
+    .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>") }))
     .pipe(gulp.dest('build'));
 });
 
