@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-core": "^6.6.4"
-  }
+    "babel-core": "^6.8.0"
+  },
 }

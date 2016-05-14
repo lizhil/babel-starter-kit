@@ -13,7 +13,7 @@
 
      let str = 'hello';
 
-     alert(`${this.name} say ${str} to you`);
+     // alert(`${this.name} say ${str} to you`);
    }
 
  }
@@ -21,3 +21,6 @@
 let Guest = new Greeting();
 
 Guest.hello();
+
+
+console.log('111');

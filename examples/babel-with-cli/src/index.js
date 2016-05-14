@@ -1,7 +1,7 @@
-import path from 'path';
+import path from 'path'
 
-console.log(path.resolve(__dirname, './src'));
+console.log(path.resolve(__dirname,'./src'));
 
 const fn = a => {
-  alert(a);
+	alert('msg');
 }
